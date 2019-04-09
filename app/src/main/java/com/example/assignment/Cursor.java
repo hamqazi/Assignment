@@ -2,5 +2,5 @@ package com.example.assignment;
 
 public class Cursor {
 
-    int i=0;
+    int i=1;
 }
