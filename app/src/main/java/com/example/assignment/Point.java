@@ -1,12 +1,12 @@
-package com.example.assignmentpaint;
+package com.example.assignment;
 
-public  class Cursor {
+public  class Point {
     float x;
     float y;
     int colour;
     float radius;
 
-    public Cursor(float x, float y, int colour, float radius) {
+    public Point(float x, float y, int colour, float radius) {
         this.x = x;
         this.y = y;
         this.colour = colour;

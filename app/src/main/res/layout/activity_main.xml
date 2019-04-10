@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Undo"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="6dp" />
+        tools:layout_editor_absoluteY="667dp" />
 
     <Button
         android:id="@+id/btnUndo"
@@ -23,7 +23,7 @@
         android:textStyle="bold"
         android:typeface="sans"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="6dp" />
+        tools:layout_editor_absoluteY="667dp" />
 
     <Button
         android:id="@+id/btnRedo"
@@ -32,7 +32,31 @@
         android:text="Redo"
         android:textStyle="bold"
         android:typeface="sans"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="6dp" />
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="307dp"
+        android:layout_height="19dp"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:text="Brush Size"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <view
+        android:id="@+id/pv"
+        class="com.example.assignment.DrawView"
+        id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="610dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="51dp" />
 
 </android.support.constraint.ConstraintLayout>
