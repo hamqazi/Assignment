@@ -8,55 +8,64 @@
 
     <Button
         android:id="@+id/btnUndo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="133dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
         android:text="Undo"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="667dp" />
-
-    <Button
-        android:id="@+id/btnUndo"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Undo"
-        android:textStyle="bold"
-        android:typeface="sans"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="667dp" />
-
-    <Button
-        android:id="@+id/btnRedo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Redo"
-        android:textStyle="bold"
-        android:typeface="sans"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="667dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pv" />
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="307dp"
-        android:layout_height="19dp"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="25dp" />
+        android:layout_width="229dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="Brush Size"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="25dp" />
+        app:layout_constraintEnd_toStartOf="@+id/seekBar"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <view
         android:id="@+id/pv"
         class="com.example.assignment.DrawView"
         id="@+id/view"
-        android:layout_width="410dp"
-        android:layout_height="610dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="51dp" />
+        android:layout_width="393dp"
+        android:layout_height="452dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/btnRedo"
+        android:layout_width="156dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="12dp"
+        android:text="Redo"
+        app:layout_constraintStart_toEndOf="@+id/btnUndo"
+        app:layout_constraintTop_toBottomOf="@+id/pv" />
 
 </android.support.constraint.ConstraintLayout>
